@@ -1,32 +1,32 @@
 "use strict"
 
-let root = (document.getElementById('root') || (function() {
-  let _root = document.createElement('div');
-  _root.setAttribute('class', 'root');
-  document.body.appendChild(_root);
-  return _root;
-})());
+// let root = (document.getElementById('root') || (function() {
+//   let _root = document.createElement('div');
+//   _root.setAttribute('class', 'root');
+//   document.body.appendChild(_root);
+//   return _root;
+// })());
 
-let greeting = document.createElement('h1');
+// let greeting = document.createElement('h1');
 
-let greetText = document.createTextNode('Hello World');
+// let greetText = document.createTextNode('Hello World');
 
-greeting.appendChild(greetText);
+// greeting.appendChild(greetText);
 
-Object.assign(greeting.style, {
-  backgroundColor: "lightblue",
-  minHeight: "100px",
-  minWidth: "200px",
-  border: "1px solid black"
-});
+// Object.assign(greeting.style, {
+//   backgroundColor: "lightblue",
+//   minHeight: "100px",
+//   minWidth: "200px",
+//   border: "1px solid black"
+// });
 
-root.appendChild(greeting);
+// root.appendChild(greeting);
 
-let childNodes = greeting.childNodes;
-let children = greeting.children;
+// let childNodes = greeting.childNodes;
+// let children = greeting.children;
 
-console.dir(childNodes);
-console.dir(children);
+// console.dir(childNodes);
+// console.dir(children);
 
 
 import '../re/Index.bs.js';
@@ -48,6 +48,6 @@ if (module.hot) {
   });
   module.hot.accept(function() {
     console.clear();
-    console.log('-- Application Updated --\r\n'); 
+    console.log('-- Application Updated --\r\n');
   });
 }
